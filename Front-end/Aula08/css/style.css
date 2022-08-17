@@ -1,0 +1,34 @@
+body {
+    background-color: #131313;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.media-picture {
+    height: 400px;
+    background-image: url('../img/001.jpeg')
+}
+
+.review-score {
+    color: white;
+    background-color: #e6bd09;
+    color: blue;
+    padding: 12px;
+}
+
+h2 {
+    line-height: 60px;
+    color: steelblue;
+}
+
+p {
+    color: #bdbdbd;
+    font-family: 'Roboto';
+}
+
+a {
+    color: yellow;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/contato.style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="alert flex-left">Desconto de 20%</div>
+        <div class="title flex-left"><img src="img/pngwing.com.png" alt="logo" width="100"><h2>Herois e Vilões</h2></div>
+        <div class="flex-right">
+            <ul>
+                <li><a href="registro.html" target="_blank">Registro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1>Contato</h1>
+    
+    <form class="form-cadastro">
+    <div class="login">
+        <label for="usuario"></label>
+            <input
+                type="text" 
+                placeholder="Nome e Sobrenome"
+                id="usuario"
+                name="usuario"
+                minlength="6"
+                maxlength="12"
+                required>      
+    </div>
+    <div class="email">
+        <label for="email"></label>
+           <input 
+                form="email"
+                type="email"
+                placeholder="Email"
+                id="email"
+                required>
+    </div>
+    <div class="sugestao">
+        <textarea name="sugestao" 
+                rows="10" 
+                cols="52">
+        </textarea>
+    </div>
+
+    <div>
+            <button class="limpar" type="reset">Limpar</button>
+            <button class="entrar">Entrar</button>
+    </div>
+    </form>
+
+    <footer>
+        Todos os direitos reservados &#169; Front-end I
+    </footer>
+</body>
+</html>

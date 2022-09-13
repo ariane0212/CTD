@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="alert flex-left">Desconto de 20%</div>
+        <div class="title flex-left"><img src="img/pngwing.com.png" alt="logo" width="100"><h2>Herois e Vilões</h2></div>
+        <div class="flex-right">
+            <ul>
+                <li><a href="registro.html" target="_blank">Registro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Login</h1>
+        
+        <form class="form-cadastro">
+        <div class="login">
+            <label for="usuario"></label>
+                <input
+                    type="text" 
+                    placeholder="Usuário"
+                    id="usuario"
+                    name="usuario"
+                    minlength="6"
+                    maxlength="12"
+                    required>      
+        </div>
+        <div class="senha">
+            <label for="senha"></label>
+                <input
+                    type=" password" 
+                    placeholder="Senha"
+                    id="senha"
+                    name="senha"
+                    minlength="8"
+                    required>      
+        </div>
+        <button class="button">Entrar</button>
+        </form>
+
+            <h4>Não possui uma conta? <a href="#"">Registe-se</a></h4>
+    </main>
+
+    <footer>
+            Todos os direitos reservados &#169; Front-end I
+    </footer>
+
+</body>
+</html>

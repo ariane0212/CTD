@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.alert {
+    background: #1cd1b0;
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.flex-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    background-color: #00669f;
+    width: 100%;
+    height: 101px;
+    padding: 28px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.flex-right {
+    background-color: rgb(16, 16, 43);
+    padding: 10px 15px 10px;
+    color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-right a {
+    color: white;
+    font-size: 18px;  /*1.5rem = 24px*/
+    text-decoration: none;
+}
+
+.flex-right ul li {
+    display: inline;
+    padding: 20px;
+    text-align: left;
+    pointer-events: visible;
+}
+/* ---------FIM DO MENU----------- */
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    font-size: 48px;
+    margin: 50px auto;
+    margin-left: 650px;
+}
+
+.form-cadastro {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #43ccaa;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input {
+    padding: 15px 32px;
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0 auto;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #222222;; 
+}
+
+a {
+    text-decoration: none;
+    color: #00669F;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFF9F9;
+}
+
+/*---------FOOTER---------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #00669F;
+    color: #FFF;
+    width: 100%;
+    height: 40px;    
+    text-align: center;
+    line-height: 100px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px;
+}
+
+
+

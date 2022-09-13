@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/registro.style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="alert flex-left">Desconto de 20%</div>
+        <div class="title flex-left"><img src="img/pngwing.com.png" alt="logo" width="100"><h2>Herois e Vilões</h2></div>
+        <div class="flex-right">
+            <ul>
+                <li><a href="registro.html" target="_blank">Registro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+    <h1>Registro</h1>
+    
+    <form class="form-cadastro">
+    <div class="login">
+        <label for="usuario"></label>
+            <input
+                type="text" 
+                placeholder="Nome e Sobrenome"
+                id="usuario"
+                name="usuario"
+                minlength="6"
+                maxlength="12"
+                required>      
+    </div>
+    <div class="email">
+        <label for="email"></label>
+           <input form="email"
+            type="email"
+            placeholder="Email"
+            id="email"
+            required>
+    </div>
+    <div class="senha">
+        <label for="senha"></label>
+            <input
+                type=" password" 
+                placeholder="Senha"
+                id="senha"
+                name="senha"
+                minlength="8"
+                required>      
+    </div>
+    <div class="paises">
+        <select name="paises" placeholder="Selecione um País">
+            <option>País</option>
+            <option value="argentina">Argentina</option>
+            <option>Brasil</option>
+            <option>Canadá</option>
+            <option>Estados Unidos</option>
+            <option>Espanha</option>
+            <option>França</option>
+            <option>Holanda</option>
+            <option>Portugal</option>
+        </select>        
+    </div>
+
+    <div>
+        <button class="limpar" type="reset">Limpar</button>
+        <button class="registrar">Registrar</button>
+    </form>
+    
+        <h4>Não possui uma conta? <a href="#">Registe-se</a></h4>
+    </main>
+
+    <footer>
+        &copy Todos os direitos reservados a FRONT END 1
+    </footer>
+    
+</body>
+</html>

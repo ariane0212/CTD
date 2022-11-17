@@ -1,0 +1,69 @@
+program { 
+  // Mover - Move a garra em alguma direção 
+  /*
+    Direções 
+
+    Norte - Cima
+    Sul - Baixo
+    Leste - Direita
+    Oeste - Esquerda
+
+    Chamar a função: Mover(Norte)
+
+ */
+
+  Mover(Leste)
+
+  // Colocar/Retirar - Coloca ou remover uma pedra de alguma coloração na posicao determinada
+
+  /
+
+    Cores
+
+  */
+
+  Colocar(Azul)
+  Colocar(Preto)
+  Retirar(Azul)
+}
+
+Exemplo:
+
+procedure DesenharLinhaPreta3() {
+  Colocar(Preto)
+  Mover(Leste)
+  Colocar(Preto)
+  Mover(Leste)
+  Colocar(Preto)
+}
+------------------------------------------
+procedure Colocar3(cor) {
+  Colocar(cor)
+  Colocar(cor)
+  Colocar(cor)
+}
+program {
+  Colocar3(Preto)
+  Colocar3(Vermelho)
+}
+
+------------------------------------------
+
+program {
+  DesenharLinha3(Verde, Leste)
+  Mover(Leste)
+  DesenharLinha3(Vermelho, Norte)
+  Mover(Norte)
+  DesenharLinha3(Preto, Oeste)
+  Mover(Oeste)
+  DesenharLinha3(Azul, Sul)
+}
+
+-------------------------------------------
+procedure Triade(verde, vermelho, preto) {
+  Colocar(verde)
+  Mover(Leste)
+  Colocar(vermelho)
+  Mover(Leste)
+  Colocar(preto)
+}

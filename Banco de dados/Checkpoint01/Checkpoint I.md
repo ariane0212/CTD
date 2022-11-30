@@ -1,5 +1,8 @@
+# Checkpoint I
+
 Desafio de definição de Entidades
-Criar um modelo lógico de um banco de dados, pode ser um
+
+📝 Objetivo: Criar um modelo lógico de um banco de dados, pode ser um
 negócio ou uma aplicação. (Por exemplo: uma biblioteca)
 Não serão aceitos modelos que já foram feitos em mesa de
 trabalho ou se que encontram disponíveis no PG.

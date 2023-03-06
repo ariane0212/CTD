@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="jogo">
+        <h1>Jokenpô</h1>
+        <h2>Faça sua escolha</h2>
+        <div>
+            <button id="pedra" onclick="jogar()"><img src="pedra.png" alt="Pedra"></button>
+            <button id="papel" onclick="jogar()"><img src="papel.png" alt="Papel"></button>
+            <button id="tesoura" onclick="jogar()"><img src="tesoura.png" alt="Tesoura"></button>
+        </div>
+        <p>
+            <input type="reset" value=" RESET " onclick="resetar()">
+        </p>
+        <h2>Computador</h2>
+        <img src="pc.png" alt="PC" id="pc">
+
+        <h2 id="placar"></h2>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>

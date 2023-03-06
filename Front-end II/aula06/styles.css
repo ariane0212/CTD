@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s linear;
+}
+h1 {
+  padding: .5em 1em;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  color: grey;
+}
+
+body.dark {
+  background-color: rgb(39, 39, 39);
+}
+
+/*-----------BOTÃO DARK MODE------------*/
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 22px 20px;
+  padding: 5px;
+  height: 12px;
+  width: 42px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  height: 18px;
+  width: 18px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(27px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+/*------------------------TÍTULO--------------------------*/
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(69, 63, 63);
+}
+
+body.dark .titulo {
+  background-color: rgb(19, 19, 19);
+  color: rgb(170, 170, 170);
+  border-color: black;
+}
+/*---------------CONTEÚDO-----------------*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2em 10%;
+  
+}
+
+.item {
+  width: 30em;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item h2 {
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+
+body.dark .item {
+  background-color: rgb(19, 19, 19);
+  border-color: black;
+  color: rgb(230, 230, 230);
+}
+
+
+
+/* ------------------------------ Estilos para o tema escuro (Dark-Mode) ----------------------------------------------- */
+
+/* Os seguintes estilos são os que usaremos para aplicar o modo escuro, 
+você terá que modificar os seletores a fim de poder resolver o exercício. /* 
+
+// A cor de fundo 
+{
+  background-color: rgb(39, 39, 39);
+}
+
+// Modificações no titulo 'A família dos felinos'
+{ 
+  background-color: rgb(19, 19, 19);
+  color: rgb(170, 170, 170);
+  border-color: black;
+}
+
+
+// Modificações nos items
+{
+  background-color: rgb(19, 19, 19);
+  border-color: black;
+}
+
+// Modificações nos textos dos itens e cabeçalhos dos itens
+{
+  color: rgb(230, 230, 230);
+}
+*/

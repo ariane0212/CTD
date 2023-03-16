@@ -93,9 +93,13 @@ body.dark h1{
 /*-----------INICIO DO FORMULARIO------------*/
 
 .formulario {
-  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 20px auto;
+  margin: 12px;
 }
 
 .formulario input, form textarea {
@@ -125,8 +129,12 @@ body.dark h1{
 .formulario .btn-submit {
   color: #f7f3f3;
   background: #527686;
+  width: 650px;
+  height: 45px;
   cursor: pointer;
   transition: 0.5s;
+  border: none;
+  border-radius: 8px;
 }
 .formulario .btn-submit:hover {
   background-color: #0a163c;
@@ -136,21 +144,14 @@ body.dark h1{
 }
 
 .formulario textarea {
-  height: 134px;
+  width: 650px;
+  height: 150px;
 }
 
-.metade {
-  float: left;
-  width: 48%;
+ .metade {
+  width: 650px;
+  max-width: 68%;
   margin-bottom: 1em;
-}
-
-.right {
-  width: 50%;
-}
-
-.left {
-  margin-right: 2%;
 }
 
 /*---------CONTEUDO----------*/
@@ -189,10 +190,43 @@ body.dark .item {
 }
 
 /*---------PARTE RESPONSIVA-----------*/
-@media (max-width: 768px) {
-  .metade {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
+@media (max-width: 390px) {
+
+  .formulario textarea {
+    max-width: 390px;
+    height: 150px;
   }
+  
+  .metade { 
+    width: 100%;
+    max-width: 380px;
+    margin: 12px;
+  }
+  
+  .formulario .btn-submit {
+    width: 380px;
+  }
+
+  form .formulario {
+    width: 100%;
+  }
+
+  .formulario input {
+    border: 0;
+    outline: 0;
+    padding: 0.8em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+  
 }

@@ -20,6 +20,14 @@ body.dark {
   background-color: rgb(39, 39, 39);
 }
 
+.error {
+  color: red;
+}
+
+.errorDescricao {
+  color: red;
+}
+
 /*---------CABEÇALHO---------*/
 
 h1 {
@@ -128,7 +136,7 @@ body.dark h1{
 }
 
 .formulario textarea {
-  height: 105px;
+  height: 134px;
 }
 
 .metade {

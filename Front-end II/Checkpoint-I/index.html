@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Checkpoint 01</title>
-</head>
-<body>
-    
-    <div>
-        <header class="main-header">
-            <h1>Criação do Card</h1>
-          
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
-      
-        </header>
-        </div>
 
-    <form class="formulario" method="post" action="#">
-          
-        <div class="metade left">
-      
-          <input type="text" placeholder="Título" required="">
-          <input type="email" placeholder="URL" required="">
-      
-        </div>
-        <div class="metade right">
-            <textarea name="mensagem" type="text" placeholder="Descrição" required=""></textarea>
-          </div>  
-        
-          <input type="submit" value="Enviar Dados" class="btn-submit">
-        
-        </form>
-      
-          <div class="container">
- 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Checkpoint 01</title>
+</head>
+
+<body>
+
+  <div>
+    <header class="main-header">
+      <h1>Criação do Card</h1>
+
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+
+    </header>
   </div>
-  <main id="content"></main>
-  
-  <script src="js/main.js"></script>
+
+  <form class="formulario" method="post" action="#">
+
+    <div class="metade left">
+
+      <input type="text" placeholder="Título" id="inputTitulo" required="">
+      <div style="width: 100px; height: 24px">
+        <span class="error"></span>
+      </div>
+      <input type="url" placeholder="URL" id="userURL" required="">
+      <span class="error"></span>
+
+    </div>
+    <div class="metade right">
+      <textarea name="mensagem" type="text" id="userDescricao" placeholder="Descrição" required=""></textarea>
+    </div>
+
+    <span class="errorDescricao"></span>
+
+    <input type="submit" value="Enviar Dados" id="loginButton" class="btn-submit">
+
+  </form>
+
+  <div class="cardsCriados">
+
+    <h1 class="titulo-cards">Cards Criados</h1>
+
+    <div class="container">
+
+      <div class="item" id="item">
+          <img src="images/01.png">
+          <h2> Bitcoin </h2>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet, ipsa soluta debitis sed consectetur temporibus fugit maiores eum labore explicabo voluptates doloremque illo accusantium eius cupiditate aliquid amet facilis!
+          </p>
+          </div>
+
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>

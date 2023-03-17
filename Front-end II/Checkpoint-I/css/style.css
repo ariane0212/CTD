@@ -10,10 +10,10 @@ body {
   height: 100%;
   width: 100%;
   background: rgb(234, 229, 229);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 body.dark {
@@ -43,7 +43,7 @@ body.dark h1{
 /*------------------------TÍTULO--------------------------*/
 .main-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 /*-----------BOTÃO DARK MODE------------*/
@@ -144,27 +144,39 @@ body.dark h1{
 }
 
 .formulario textarea {
-  width: 650px;
+  width: 100%;
   height: 150px;
 }
 
  .metade {
   width: 650px;
-  max-width: 68%;
   margin-bottom: 1em;
 }
 
 /*---------CONTEUDO----------*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
-  width: 80%;
-  margin: 2em 10%;
+  justify-content:center;
+  width: auto;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .item {
-  width: 19em;
+  display: flex;
+  flex-direction: column;
+  width: 406px;
+  height: 500px;
+  flex-wrap:wrap;
+  text-align: center;
   background-color: white;
   box-sizing: border-box;
   padding: 1.5em;
@@ -174,13 +186,17 @@ body.dark h1{
   font-size: 14px;
 }
 
-.item img {
+img {
   width: 100%;
 }
 
-.item h2 {
+.item-h2 {
   font-size: 1em;
   margin-bottom: 0.2em;
+}
+
+.item-p {
+  width: 100%;
 }
 
 body.dark .item {
@@ -196,6 +212,19 @@ body.dark .item {
     max-width: 390px;
     height: 150px;
   }
+
+  .titulo-cards {
+    width: auto;
+    height: 38px;
+    top: 632px;
+    margin: 12px 12px 12px 12px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    margin: 0 auto;
+  }
   
   .metade { 
     width: 100%;
@@ -208,7 +237,7 @@ body.dark .item {
   }
 
   form .formulario {
-    width: 100%;
+    width: 100px;
   }
 
   .formulario input {

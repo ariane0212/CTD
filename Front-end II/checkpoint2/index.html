@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+
+    <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+    <link rel="stylesheet" href="./styles/acesso.css" />
+
+  </head>
+
+  <body>
+    <div class="left">
+      <img src="./assets/pessoa-login.png" alt="" />
+    </div>
+
+    <div class="right">
+      <form class="form-login">
+        <div class="form-header">
+          <p>To-Do App</p>
+        </div>
+
+        <h1>Acessar</h1>
+        <div>
+          <label for="userEmail">E-mail</label>
+          <input type="email" id="userEmail" required minlength="6">
+          <small>Preencha o email corretamente</small>
+        </div>
+        
+        <div>
+          <label for="userPassword">Senha</label>
+          <input type="password" id="userPassword" required minlength="8">
+          <small>Preencha a senha corretamente</small>
+        </div>
+
+        <button type="submit" id="loginButton" disabled>Acessar</button>
+
+      </form>
+      <div class="ingressar">
+        <a href="../ariane/signup.html">Não possui conta? Crie agora mesmo</a>
+      </div>
+    </div>
+
+    <script src="scripts/login.js" type="module"></script>
+
+  </body>
+</html>
+
